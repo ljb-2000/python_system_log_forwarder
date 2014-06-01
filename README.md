@@ -4,6 +4,11 @@ python_system_log_forwarder
 Simple python script that will monitor any number of system log files and 
 forward the messages to a remote host using tcp.
 
+Prerequisites:
+
+	*  You will need pygtail.  You can download a copy from the repository here:
+		https://github.com/bgreenlee/pygtail
+
 This is a quick and dirty remote log forwarder.  I was working with some data 
 analytics software and wanted to forward text log messages to that product.
 On the receiver end, just set up a TCP listener.  Netcat will even work.
